@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -72,20 +72,13 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hyper_element__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hyper_element__ = __webpack_require__(3);
 
 
 
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(0);
-
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports) {
 
 var hyperHTML = (function () {'use strict';
@@ -633,19 +626,19 @@ try { module.exports = hyperHTML; } catch(o_O) {}
 
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports) {
 
 module.exports = "h1{\r\n    font-weight: 300;\r\n}\r\nli.active{\r\n    color: blue;\r\n}\r\nsection > div{\r\n    display: none;\r\n}\r\nsection > div.open{\r\n    display: block;\r\n}\r\nh1:hover,\r\nnav ul li:hover{\r\n    cursor: pointer;\r\n}"
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hyperhtml__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hyperhtml__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hyperhtml___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hyperhtml__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style_css__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style_css__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__style_css__);
 
 
@@ -669,7 +662,7 @@ customElements.define('hyper-element', class extends HTMLElement {
     this._state = {
       token: null,
       open: false,
-      endpoint: 'http://jsonplaceholder.typicode.com',
+      endpoint: 'https://jsonplaceholder.typicode.com',
       links: {
         posts: [],
         todos: [],
@@ -756,6 +749,13 @@ customElements.define('hyper-element', class extends HTMLElement {
   }
 
 });
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(0);
+
 
 /***/ })
 /******/ ]);
