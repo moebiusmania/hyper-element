@@ -1,0 +1,25 @@
+{
+  "name": "hyper-element",
+  "version": "1.0.0",
+  "description": "Web component built in top of V1 spec, ES6 proxy and HyperHTML ",
+  "main": "index.js",
+  "repository": "http://salvatore.laisa@gitlab.contactlab.com/product-devs/account-central-shared.git",
+  "author": "Salvatore Laisa <moebiusmania@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "concurrently -k \"http-server ./demo -s -p 8081\" \"webpack -w\"",
+    "deploy": "gh-pages -d demo"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "gh-pages": "^1.0.0",
+    "http-server": "^0.10.0",
+    "text-loader": "^0.0.1",
+    "uglifyjs-webpack-plugin": "^0.4.3",
+    "webpack": "^2.5.1",
+    "webpack-notifier": "^1.5.0"
+  },
+  "dependencies": {
+    "hyperhtml": "^0.11.0"
+  }
+}

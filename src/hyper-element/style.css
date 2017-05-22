@@ -1,0 +1,16 @@
+h1{
+    font-weight: 300;
+}
+li.active{
+    color: blue;
+}
+section > div{
+    display: none;
+}
+section > div.open{
+    display: block;
+}
+h1:hover,
+nav ul li:hover{
+    cursor: pointer;
+}
